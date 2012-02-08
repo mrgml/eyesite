@@ -1,0 +1,18 @@
+<testng-results>
+  <reporter-output>
+  </reporter-output>
+  <suite name="eyesite">
+    <groups>
+    </groups>
+    <test name="Command line test">
+      <class name="com.arantech.eyesite.tests.TestNGTest">
+        <test-method status="PASS" signature="doBeforeTests()" name="doBeforeTests" is-config="true" duration-ms="8" started-at="2012-01-28T15:37:37Z" finished-at="2012-01-28T15:37:37Z">
+        </test-method>
+        <test-method status="PASS" signature="thisTestWillFail()" name="thisTestWillFail" duration-ms="0" started-at="2012-01-28T15:37:37Z" finished-at="2012-01-28T15:37:37Z">
+        </test-method>
+        <test-method status="PASS" signature="thisTestWillPass()" name="thisTestWillPass" duration-ms="0" started-at="2012-01-28T15:37:37Z" finished-at="2012-01-28T15:37:37Z">
+        </test-method>
+      </class>
+    </test>
+  </suite>
+</testng-results>

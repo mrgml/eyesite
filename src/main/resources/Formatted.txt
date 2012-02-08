@@ -1,0 +1,374 @@
+Customer: Swisscom
+Hostname: magpie
+Timestamp: 1325582226995
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G102G_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_iups_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+DAILY,DATE_ID,UNIQUE_IMSIS,EVENT_COUNT
+2011/12/19 00:00.00,4371,180204,337487
+2011/12/13 00:00.00,4365,180204,337487
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_iucs_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G103G_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM tek_mapd_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+DAILY,DATE_ID,UNIQUE_IMSIS,EVENT_COUNT
+2011/12/19 00:00.00,4371,61854,129818
+2011/12/13 00:00.00,4365,61854,129818
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_a_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+DAILY,DATE_ID,UNIQUE_IMSIS,EVENT_COUNT
+2011/12/13 00:00.00,4365,438803,1352713
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G10GP_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+DAILY,DATE_ID,UNIQUE_IMSIS,EVENT_COUNT
+2011/12/19 00:00.00,4371,49879,1022285
+2011/12/13 00:00.00,4365,49879,1022285
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_gb_imsi_daily_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population DAILY
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as daily, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM GNSM_imsisvc__daily_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_iucs_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G10GP_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM GNSM_imsisvc__week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G102G_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_iups_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM tek_mapd_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G103G_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_a_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population WEEK
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_gb_imsi_week_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_iups_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_iucs_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM GNSM_imsisvc__month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM tek_mapd_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G103G_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G10GP_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_gb_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G102G_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Population MONTH
+SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM inet_a_imsi_month_user GROUP BY date_id ORDER BY date_id DESC
+
+Aging Parameters
+select ar.table_prefix as "Interface", ar.index_type as "Index", ap.entity_type, ap.entity_b_perd_user_ret_num_dy as Live_User_Days, ap.entity_b_perd_group_ret_num_dy as Live_Group_Days, ap.entity_daily_user_ret_num_dy as Daily_User_Days, ap.entity_daily_group_ret_num_dy as Daily_Group_Days, ap.entity_wkly_user_ret_num_dy as Weekly_User_Days, ap.entity_wkly_group_ret_num_dy as Weekly_Group_Days, ap.entity_mthly_user_ret_num_dy as Monthly_User_Days, ap.entity_mthly_group_ret_num_dy as Monthly_Group_Days, ap.event_ret_num_dy as Event_Days from aging_properties ap, aggregate_record ar where ap.agg_record_def_id = ar.aggregate_record_id or ap.agg_record_def_id = -1
+Interface,Index,ENTITY_TYPE,LIVE_USER_DAYS,LIVE_GROUP_DAYS,DAILY_USER_DAYS,DAILY_GROUP_DAYS,WEEKLY_USER_DAYS,WEEKLY_GROUP_DAYS,MONTHLY_USER_DAYS,MONTHLY_GROUP_DAYS,EVENT_DAYS
+G102G,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,cell,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,purl,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,dom,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,apn,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,sgsn,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,ggsn,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iucs,cell,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iucs,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iucs,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iucs,spc,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iucs,pnum,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iucs,sca,-1,30,30,32,90,1820,1820,1860,1860,12
+tek_mapd,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+tek_mapd,plmn,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,cell,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,purl,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,dom,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,apn,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,sgsn,-1,30,30,32,90,1820,1820,1860,1860,12
+G103G,ggsn,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_a,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_a,cell,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_a,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_a,pnum,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_a,spc,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_a,sca,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_gb,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_gb,apn,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_gb,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_gb,cell,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iups,apn,-1,30,30,32,90,1820,1820,1860,1860,12
+inetiups,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iups,cell,-1,30,30,32,90,1820,1820,1860,1860,12
+inet_iups,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+GNSM,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+GNSM,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,imsi,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,cell,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,purl,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,dom,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,apn,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,imei,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,sgsn,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,ggsn,-1,30,30,32,90,1820,1820,1860,1860,12
+G10GP,plmn,-1,30,30,32,90,1820,1820,1860,1860,12
+G102G,apn,5,30,12,32,90,1820,1820,1860,1860,12
+
+Traffic
+SELECT timeidutils.timeid_to_char(inet_a_imsi_15_group.time_id), inet_a_imsi_15_group.time_id , inet_a_imsi_15_group.counter inet_a_imsi_15_group, G102G_imsi_15_group.counter G102G_imsi_15_group, GNSM_imsisvc__15_group.counter GNSM_imsisvc__15_group, inet_iucs_imsi_15_group.counter inet_iucs_imsi_15_group, tek_mapd_imsi_15_group.counter tek_mapd_imsi_15_group, inet_iups_imsi_15_group.counter inet_iups_imsi_15_group, inet_gb_imsi_15_group.counter inet_gb_imsi_15_group, G103G_imsi_15_group.counter G103G_imsi_15_group, G10GP_imsi_15_group.counter G10GP_imsi_15_group FROM inet_a_imsi_15_group FULL JOIN G102G_imsi_15_group ON (inet_a_imsi_15_group.time_id = G102G_imsi_15_group.time_id AND inet_a_imsi_15_group.group_id = G102G_imsi_15_group.group_id) FULL JOIN GNSM_imsisvc__15_group ON (inet_a_imsi_15_group.time_id = GNSM_imsisvc__15_group.time_id AND inet_a_imsi_15_group.group_id = GNSM_imsisvc__15_group.group_id) FULL JOIN inet_iucs_imsi_15_group ON (inet_a_imsi_15_group.time_id = inet_iucs_imsi_15_group.time_id AND inet_a_imsi_15_group.group_id = inet_iucs_imsi_15_group.group_id) FULL JOIN tek_mapd_imsi_15_group ON (inet_a_imsi_15_group.time_id = tek_mapd_imsi_15_group.time_id AND inet_a_imsi_15_group.group_id = tek_mapd_imsi_15_group.group_id) FULL JOIN inet_iups_imsi_15_group ON (inet_a_imsi_15_group.time_id = inet_iups_imsi_15_group.time_id AND inet_a_imsi_15_group.group_id = inet_iups_imsi_15_group.group_id) FULL JOIN inet_gb_imsi_15_group ON (inet_a_imsi_15_group.time_id = inet_gb_imsi_15_group.time_id AND inet_a_imsi_15_group.group_id = inet_gb_imsi_15_group.group_id) FULL JOIN G103G_imsi_15_group ON (inet_a_imsi_15_group.time_id = G103G_imsi_15_group.time_id AND inet_a_imsi_15_group.group_id = G103G_imsi_15_group.group_id) FULL JOIN G10GP_imsi_15_group ON (inet_a_imsi_15_group.time_id = G10GP_imsi_15_group.time_id AND inet_a_imsi_15_group.group_id = G10GP_imsi_15_group.group_id) WHERE inet_a_imsi_15_group.group_id = 0 AND inet_a_imsi_15_group.time_id >= (select min(time_id) from minute_time_dimension where daystamp=to_char(sysdate -30,'dd-mon-yy')) ORDER BY inet_a_imsi_15_group.time_id DESC 
+TIMEIDUTILS.TIMEID_TO_CHAR(INET_A_IMSI_15_GROUP.TIME_ID),TIME_ID,INET_A_IMSI_15_GROUP,G102G_IMSI_15_GROUP,GNSM_IMSISVC__15_GROUP,INET_IUCS_IMSI_15_GROUP,TEK_MAPD_IMSI_15_GROUP,INET_IUPS_IMSI_15_GROUP,INET_GB_IMSI_15_GROUP,G103G_IMSI_15_GROUP,G10GP_IMSI_15_GROUP
+2011/12/19 17:00.00,6293821,564303,,,,,,,,1022285
+2011/12/19 16:45.00,6293806,788410,,,,129818,337487,,,
+2011/12/13 17:30.00,6285211,371801,,,,,,,,1022285
+2011/12/13 17:15.00,6285196,939103,,,,124516,337487,,,
+2011/12/13 17:00.00,6285181,41809,,,,5302,,,,
+
+Collection Stat.s
+SELECT to_char(time_stamp,'yyyy-mm-dd hh24')  as "Time", sum(numfilescollected) as "Files Collected", sum(numobjectrecordscreated) as "Object Recs Created", round(sum(numobjectrecordscreated)/60) as "Obj Recs Created/Min", max(numfilespending) as "Max Files Pending", sum(numrecordsprocessed) as "Recs Processed", sum(numrecordsfilteredout) as "Recs Filtered", sum(numrecordsbadlyformed) as "Badly Formed Recs" FROM counter_value WHERE Service_Type = 'SlaveCollectionService' AND time_stamp between trunc(sysdate - 30) AND to_date(sysdate) GROUP BY to_char(time_stamp,'yyyy-mm-dd hh24') ORDER BY to_char(time_stamp,'yyyy-mm-dd hh24') DESC
+Time,Files Collected,Object Recs Created,Obj Recs Created/Min,Max Files Pending,Recs Processed,Recs Filtered,Badly Formed Recs
+2011-12-23 14,0,0,0,0,0,0,0
+2011-12-23 13,0,0,0,0,0,0,0
+2011-12-23 12,0,0,0,0,0,0,0
+2011-12-23 11,0,0,0,0,0,0,0
+2011-12-23 10,0,0,0,0,0,0,0
+2011-12-23 09,0,0,0,0,0,0,0
+2011-12-23 08,0,0,0,0,0,0,0
+2011-12-23 07,0,0,0,0,0,0,0
+2011-12-23 06,0,0,0,0,0,0,0
+2011-12-23 05,0,0,0,0,0,0,0
+2011-12-23 04,0,0,0,0,0,0,0
+2011-12-23 03,0,0,0,0,0,0,0
+2011-12-23 02,0,0,0,0,0,0,0
+2011-12-23 01,0,0,0,0,0,0,0
+2011-12-23 00,0,0,0,0,0,0,0
+2011-12-22 23,0,0,0,0,0,0,0
+2011-12-22 22,0,0,0,0,0,0,0
+2011-12-22 21,0,0,0,0,0,0,0
+2011-12-22 20,0,0,0,0,0,0,0
+2011-12-22 19,0,0,0,0,0,0,0
+2011-12-22 18,0,0,0,0,0,0,0
+2011-12-22 17,0,0,0,0,0,0,0
+2011-12-22 16,0,0,0,0,0,0,0
+2011-12-22 15,0,0,0,0,0,0,0
+2011-12-22 14,0,0,0,0,0,0,0
+2011-12-22 13,0,0,0,0,0,0,0
+2011-12-22 12,0,0,0,0,0,0,0
+2011-12-22 11,0,0,0,0,0,0,0
+2011-12-22 10,0,0,0,0,0,0,0
+2011-12-22 09,0,0,0,0,0,0,0
+2011-12-22 08,0,0,0,0,0,0,0
+2011-12-22 07,0,0,0,0,0,0,0
+2011-12-22 06,0,0,0,0,0,0,0
+2011-12-22 05,0,0,0,0,0,0,0
+2011-12-22 04,0,0,0,0,0,0,0
+2011-12-22 03,0,0,0,0,0,0,0
+2011-12-22 02,0,0,0,0,0,0,0
+2011-12-22 01,0,0,0,0,0,0,0
+2011-12-22 00,0,0,0,0,0,0,0
+2011-12-21 23,0,0,0,0,0,0,0
+2011-12-21 22,0,0,0,0,0,0,0
+2011-12-21 21,0,0,0,0,0,0,0
+2011-12-21 20,0,0,0,0,0,0,0
+2011-12-21 19,0,0,0,0,0,0,0
+2011-12-21 18,0,0,0,0,0,0,0
+2011-12-21 17,0,0,0,0,0,0,0
+2011-12-21 16,0,0,0,0,0,0,0
+2011-12-21 15,0,0,0,0,0,0,0
+2011-12-21 14,0,0,0,0,0,0,0
+2011-12-21 13,0,0,0,0,0,0,0
+2011-12-21 12,0,0,0,0,0,0,0
+2011-12-21 11,0,0,0,0,0,0,0
+2011-12-21 10,0,0,0,0,0,0,0
+2011-12-21 09,0,0,0,0,0,0,0
+2011-12-21 08,0,0,0,0,0,0,0
+2011-12-21 07,0,0,0,0,0,0,0
+2011-12-21 06,0,0,0,0,0,0,0
+2011-12-21 05,0,0,0,0,0,0,0
+2011-12-21 04,0,0,0,0,0,0,0
+2011-12-21 03,0,0,0,0,0,0,0
+2011-12-21 02,0,0,0,0,0,0,0
+2011-12-21 01,0,0,0,0,0,0,0
+2011-12-21 00,0,0,0,0,0,0,0
+2011-12-20 23,0,0,0,0,0,0,0
+2011-12-20 22,0,0,0,0,0,0,0
+2011-12-20 21,0,0,0,0,0,0,0
+2011-12-20 20,0,0,0,0,0,0,0
+2011-12-20 19,0,0,0,0,0,0,0
+2011-12-20 18,0,0,0,0,0,0,0
+2011-12-20 17,0,0,0,0,0,0,0
+2011-12-20 16,0,0,0,0,0,0,0
+2011-12-20 15,0,0,0,0,0,0,0
+2011-12-20 14,0,0,0,0,0,0,0
+2011-12-20 13,0,0,0,0,0,0,0
+2011-12-20 12,0,0,0,0,0,0,0
+2011-12-20 11,0,0,0,0,0,0,0
+2011-12-20 10,0,0,0,0,0,0,0
+2011-12-20 09,0,0,0,0,0,0,0
+2011-12-20 08,0,0,0,0,0,0,0
+2011-12-20 07,0,0,0,0,0,0,0
+2011-12-20 06,0,0,0,0,0,0,0
+2011-12-20 05,0,0,0,0,0,0,0
+2011-12-20 04,0,0,0,0,0,0,0
+2011-12-20 03,0,0,0,0,0,0,0
+2011-12-20 02,0,0,0,0,0,0,0
+2011-12-20 01,0,0,0,0,0,0,0
+2011-12-20 00,0,0,0,0,0,0,0
+2011-12-19 23,0,0,0,0,0,0,0
+2011-12-19 22,0,0,0,0,0,0,0
+2011-12-19 21,0,0,0,0,0,0,0
+2011-12-19 20,0,0,0,0,0,0,0
+2011-12-19 19,0,0,0,0,0,0,0
+2011-12-19 18,0,0,0,0,0,0,0
+2011-12-19 17,81,1354532,22576,77,1354752,0,129
+2011-12-19 16,70,1255928,20932,98,1256140,0,303
+2011-12-19 15,0,0,0,0,0,0,0
+2011-12-19 14,0,0,0,0,0,0,0
+2011-12-19 13,0,0,0,0,0,0,0
+2011-12-19 12,0,0,0,0,0,0,0
+2011-12-19 11,0,0,0,0,0,0,0
+2011-12-19 10,0,0,0,0,0,0,0
+2011-12-19 09,0,0,0,0,0,0,0
+2011-12-19 08,0,0,0,0,0,0,0
+2011-12-19 07,0,0,0,0,0,0,0
+2011-12-19 06,0,0,0,0,0,0,0
+2011-12-19 05,0,0,0,0,0,0,0
+2011-12-19 04,0,0,0,0,0,0,0
+2011-12-19 03,0,0,0,0,0,0,0
+2011-12-19 02,0,0,0,0,0,0,0
+2011-12-19 01,0,0,0,0,0,0,0
+2011-12-19 00,0,0,0,0,0,0,0
+2011-12-18 23,0,0,0,0,0,0,0
+2011-12-18 22,0,0,0,0,0,0,0
+2011-12-18 21,0,0,0,0,0,0,0
+2011-12-18 20,0,0,0,0,0,0,0
+2011-12-18 19,0,0,0,0,0,0,0
+2011-12-18 18,0,0,0,0,0,0,0
+2011-12-18 17,0,0,0,0,0,0,0
+2011-12-18 16,0,0,0,0,0,0,0
+2011-12-18 15,0,0,0,0,0,0,0
+2011-12-18 14,0,0,0,0,0,0,0
+2011-12-18 13,0,0,0,0,0,0,0
+2011-12-18 12,0,0,0,0,0,0,0
+2011-12-18 11,0,0,0,0,0,0,0
+2011-12-18 10,0,0,0,0,0,0,0
+2011-12-18 09,0,0,0,0,0,0,0
+2011-12-18 08,0,0,0,0,0,0,0
+2011-12-18 07,0,0,0,0,0,0,0
+2011-12-18 06,0,0,0,0,0,0,0
+2011-12-18 05,0,0,0,0,0,0,0
+2011-12-18 04,0,0,0,0,0,0,0
+2011-12-18 03,0,0,0,0,0,0,0
+
+Model Footprint
+SELECT ar.table_prefix agg_prefix, ar.index_type agg_index, sum(case when upper(segment_name) like '%15%' then bytes end)/1024/1024/1024 live, sum(case when upper(segment_name) like '%HOUR%' then bytes end)/1024/1024/1024 hourly, sum(case when upper(segment_name) like '%DAILY%' then bytes end)/1024/1024/1024 daily, sum(case when upper(segment_name) like '%WEEK%' then bytes end)/1024/1024/1024 weekly, sum(case when upper(segment_name) like '%MONTH%' then bytes end)/1024/1024/1024 monthly, sum(case when upper(segment_name) like '%ERR_EVNTS%' then bytes end)/1024/1024/1024 err_evts FROM  user_segments us FULL JOIN  aggregate_record ar  ON  (lower(us.segment_name) like lower(ar.table_prefix)||'%'||lower(upper(ar.index_type))||'%') WHERE us.segment_type <> 'Temporary' AND lower(ar.table_prefix) IN (SELECT distinct table_prefix FROM aggregate_record)GROUP BY ar.table_prefix, ar.index_type ORDER BY agg_prefix, agg_index
+AGG_PREFIX,AGG_INDEX,LIVE,HOURLY,DAILY,WEEKLY,MONTHLY,ERR_EVTS
+inet_a,cell,0.4228515625,0.076171875,0.083984375,0.02734375,0.0234375,
+inet_a,imei,0.4130859375,0.076171875,0.078125,0.02734375,0.0234375,
+inet_a,imsi,1.1767578125,0.076171875,0.4423828125,0.02734375,0.0234375,
+inet_a,pnum,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_a,sca,0.41796875,0.076171875,0.08203125,0.02734375,0.0234375,
+inet_a,spc,0.41015625,0.076171875,0.0771484375,0.02734375,0.0234375,
+inet_gb,apn,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_gb,cell,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_gb,imei,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_gb,imsi,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_iucs,cell,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_iucs,imei,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_iucs,imsi,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_iucs,pnum,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_iucs,sca,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_iucs,spc,0.408203125,0.076171875,0.076171875,0.02734375,0.0234375,
+inet_iups,apn,0.408203125,0.076171875,0.0771484375,0.02734375,0.0234375,
+inet_iups,cell,0.421875,0.076171875,0.0888671875,0.02734375,0.0234375,
+inet_iups,imsi,0.5458984375,0.076171875,0.2109375,0.02734375,0.0234375,
+inetiups,imei,0.416015625,0.076171875,0.0849609375,0.02734375,0.0234375,
+tek_mapd,imsi,0.4541015625,0.076171875,0.115234375,0.02734375,0.0234375,
+tek_mapd,plmn,0.4169921875,0.076171875,0.0849609375,0.02734375,0.0234375,
+
+ASM Information
+SELECT a.name DiskGroup, b.disk_number "Disk#", b.name DiskName, b.total_mb, b.free_mb, b.path, b.header_status FROM v$asm_disk b, v$asm_diskgroup a WHERE a.group_number (+)= b.group_number ORDER BY b.group_number, b.disk_number, b.name
+DISKGROUP,Disk#,DISKNAME,TOTAL_MB,FREE_MB,PATH,HEADER_STATUS
+DGFIBRE,0,DGFIBRE_0000,511938,365514,/dev/rdsk/c0t600601607A212600A021E7716C46E011d0s4,MEMBER
+DGFIBRE,1,DGFIBRE_0001,511938,365523,/dev/rdsk/c0t600601607A212600AC5AE84F6B46E011d0s4,MEMBER
+DGFIBRE,2,DGFIBRE_0002,511938,365523,/dev/rdsk/c0t600601607A212600ACAED27A6B46E011d0s4,MEMBER
+DGFIBRE,3,DGFIBRE_0003,511938,365524,/dev/rdsk/c0t600601607A212600AD5AE84F6B46E011d0s4,MEMBER
+DGFIBRE,4,DGFIBRE_0004,511938,365525,/dev/rdsk/c0t600601607A212600B0F15BA16A46E011d0s4,MEMBER
+DGFIBRE,5,DGFIBRE_0005,511938,365524,/dev/rdsk/c0t600601607A212600B68F67376B46E011d0s4,MEMBER
+DGFIBRE,6,DGFIBRE_0006,511938,365524,/dev/rdsk/c0t600601607A212600BE5881BC6946E011d0s4,MEMBER
+DGSATA,0,DGSATA_0000,511938,187968,/dev/rdsk/c0t600601607A21260016E8CDA86C46E011d0s4,MEMBER
+DGSATA,1,DGSATA_0001,511938,188047,/dev/rdsk/c0t600601607A212600248814746B46E011d0s4,MEMBER
+DGSATA,2,DGSATA_0002,511938,188004,/dev/rdsk/c0t600601607A212600326B8FA86B46E011d0s4,MEMBER
+DGSATA,3,DGSATA_0003,511938,188034,/dev/rdsk/c0t600601607A21260038BF969B6C46E011d0s4,MEMBER
+DGSATA,4,DGSATA_0004,511938,188003,/dev/rdsk/c0t600601607A2126003CDB66986B46E011d0s4,MEMBER
+DGSATA,5,DGSATA_0005,511938,188015,/dev/rdsk/c0t600601607A2126003DDB66986B46E011d0s4,MEMBER
+DGSATA,6,DGSATA_0006,511938,188092,/dev/rdsk/c0t600601607A2126005685CD7B6C46E011d0s4,MEMBER
+DGSATA,7,DGSATA_0007,511938,188049,/dev/rdsk/c0t600601607A21260068F3CB526C46E011d0s4,MEMBER
+DGSATA,8,DGSATA_0008,511938,188062,/dev/rdsk/c0t600601607A2126006E25E02E6C46E011d0s4,MEMBER
+DGSATA,9,DGSATA_0009,511938,188048,/dev/rdsk/c0t600601607A2126006EAEAA8A6C46E011d0s4,MEMBER
+DGSATA,10,DGSATA_0010,511938,188052,/dev/rdsk/c0t600601607A2126007A5F93D16B46E011d0s4,MEMBER
+DGSATA,11,DGSATA_0011,511938,188082,/dev/rdsk/c0t600601607A2126007E9915666C46E011d0s4,MEMBER
+DGSATA,12,DGSATA_0012,511938,188066,/dev/rdsk/c0t600601607A2126007EFEE2836C46E011d0s4,MEMBER
+DGSATA,13,DGSATA_0013,511938,188079,/dev/rdsk/c0t600601607A2126007F9915666C46E011d0s4,MEMBER
+DGSATA,14,DGSATA_0014,511938,188073,/dev/rdsk/c0t600601607A2126008AEF16176C46E011d0s4,MEMBER
+DGSATA,15,DGSATA_0015,511938,188055,/dev/rdsk/c0t600601607A212600928CDE906C46E011d0s4,MEMBER
+DGSATA,16,DGSATA_0016,511938,188061,/dev/rdsk/c0t600601607A2126000EB0D34C6C46E011d0s4,MEMBER
+DGSATA,17,DGSATA_0017,511938,188045,/dev/rdsk/c0t600601607A212600028651D86B46E011d0s4,MEMBER
+DGSATA,18,DGSATA_0018,511938,188085,/dev/rdsk/c0t600601607A212600104E03926B46E011d0s4,MEMBER
+DGSATA,19,DGSATA_0019,511938,188074,/dev/rdsk/c0t600601607A2126000EAF21886B46E011d0s4,MEMBER
+DGSATA,20,DGSATA_0020,511938,188124,/dev/rdsk/c0t600601607A2126000F1D23696B46E011d0s4,MEMBER
+DGSATA,21,DGSATA_0021,511938,187997,/dev/rdsk/c0t600601607A2126000E1D23696B46E011d0s4,MEMBER
+DGSATA,22,DGSATA_0022,511938,188041,/dev/rdsk/c0t600601607A21260014B404636B46E011d0s4,MEMBER
+DGSATA,23,DGSATA_0023,511938,188057,/dev/rdsk/c0t600601607A212600C45253DE6B46E011d0s4,MEMBER
+DGSATA,24,DGSATA_0024,511938,188076,/dev/rdsk/c0t600601607A212600C81C9D396C46E011d0s4,MEMBER
+DGSATA,25,DGSATA_0025,511938,188096,/dev/rdsk/c0t600601607A212600C8994AB56B46E011d0s4,MEMBER
+DGSATA,26,DGSATA_0026,511938,188008,/dev/rdsk/c0t600601607A212600CCFD415F6C46E011d0s4,MEMBER
+DGSATA,27,DGSATA_0027,511938,187999,/dev/rdsk/c0t600601607A212600DAAE6B1D6B46E011d0s4,MEMBER
+DGSATA,28,DGSATA_0028,511938,188064,/dev/rdsk/c0t600601607A212600DCC9A2406C46E011d0s4,MEMBER
+DGSATA,29,DGSATA_0029,511938,188032,/dev/rdsk/c0t600601607A212600DDC9A2406C46E011d0s4,MEMBER
+DGSATA,30,DGSATA_0030,511938,188050,/dev/rdsk/c0t600601607A212600E483102B6B46E011d0s4,MEMBER
+DGSATA,31,DGSATA_0031,511938,188031,/dev/rdsk/c0t600601607A212600EA48A8B96A46E011d0s4,MEMBER
+DGSATA,32,DGSATA_0032,511938,188043,/dev/rdsk/c0t600601607A212600EA76B8B06C46E011d0s4,MEMBER
+DGSATA,33,DGSATA_0033,511938,188091,/dev/rdsk/c0t600601607A212600EAF4EABF6B46E011d0s4,MEMBER
+DGSATA,34,DGSATA_0034,511938,188041,/dev/rdsk/c0t600601607A212600F415CBC86B46E011d0s4,MEMBER
+DGSATA,35,DGSATA_0035,511938,188049,/dev/rdsk/c0t600601607A212600F49975AF6A46E011d0s4,MEMBER
+
+df -lk query
+SELECT glyonown1_dbmon_utils.get_df_minus_lk from dual
+ORA-00904: "GLYONOWN1_DBMON_UTILS"."GET_DF_MINUS_LK": invalid identifier
+;java.sql.SQLException: ORA-00904: "GLYONOWN1_DBMON_UTILS"."GET_DF_MINUS_LK": invalid identifier
+;[Ljava.lang.StackTraceElement;@c4fe76
+

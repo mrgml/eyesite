@@ -1,0 +1,37 @@
+
+Currently Implemented:
+1 build creates reporting jar and delivers supporting jar's (for email etc.)
+2 run weekly & monthly population queries
+3 queries and results output to terminal (along with a bunch of debugging information)
+4 emails any file arguments to nominated address (hardcoded), using touchpoint configuration settings
+5 in source control (svn://swift/customersolutionsgroup/dev/eyesite)
+6 add formatter for output (using JAXB)
+7 set up dummy info in database
+4 add xjc compiler step to build  ( NB clean the existing generated classes as part of the build)
+3a set up automated build on bamboo
+8 send output to file
+12 add aging parameters query
+7a add Traffic volumes query
+14 create stylesheet to transform output xml to quasi csv
+5a add Collection stats query (..from counter_value)
+6a add Model Footprint query
+16 add time_id to traffic query
+15 amend report file name to include: customer, hostname, timestamp  OR  add these to the XML that's marshalled OR both
+11 gzip the output file
+17 ASM usage query
+
+TODO:
+20 set up all CSG builds on aurea
+21 deliver CSG builds from aurea
+16 unique subscribers query
+15 traffic_vol query (...get_df_minus_lk from dual) - implemented, not validated.
+9 restrict information to previous day/week/month
+10 set up for nightly cron job
+13 Use threads to run the individual queries so if any/all of them fail we still get a report back
+14 Refactor the query methods in QueryRunner, there's a lot of duplication around running the query
+18 encrypt the report file
+19 tidy up console logging
+
+
+
+

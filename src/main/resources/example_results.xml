@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<reportset>
+	<report>
+		<query>SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM GNSM_imsisvc__week_user GROUP BY date_id ORDER BY date_id DESC</query>
+		<resultset/>
+	</report>
+	<report>
+		<query>SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G102G_imsi_week_user GROUP BY date_id ORDER BY date_id DESC</query>
+		<resultset>
+			<row>
+				<column>
+					<name>WEEK</name>
+					<value>2005/10/06 00:00.00</value>
+					<type>VARCHAR2</type>
+				</column>
+				<column>
+					<name>DATE_ID</name>
+					<value>2106</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>UNIQUE_IMSIS</name>
+					<value>1</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>EVENT_COUNT</name>
+					<value>20</value>
+					<type>NUMBER</type>
+				</column>
+			</row>
+			<row>
+				<column>
+					<name>WEEK</name>
+					<value>2005/10/05 00:00.00</value>
+					<type>VARCHAR2</type>
+				</column>
+				<column>
+					<name>DATE_ID</name>
+					<value>2105</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>UNIQUE_IMSIS</name>
+					<value>1</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>EVENT_COUNT</name>
+					<value>20</value>
+					<type>NUMBER</type>
+				</column>
+			</row>
+		</resultset>
+	</report>
+	<report>
+		<query>SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as week, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G103G_imsi_week_user GROUP BY date_id ORDER BY date_id DESC</query>
+		<resultset/>
+	</report>
+	<report>
+		<query>SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM GNSM_imsisvc__month_user GROUP BY date_id ORDER BY date_id DESC</query>
+		<resultset/>
+	</report>
+	<report>
+		<query>SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G103G_imsi_month_user GROUP BY date_id ORDER BY date_id DESC</query>
+		<resultset>
+			<row>
+				<column>
+					<name>MONTH</name>
+					<value>2005/10/14 00:00.00</value>
+					<type>VARCHAR2</type>
+				</column>
+				<column>
+					<name>DATE_ID</name>
+					<value>2114</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>UNIQUE_IMSIS</name>
+					<value>1</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>EVENT_COUNT</name>
+					<value>9</value>
+					<type>NUMBER</type>
+				</column>
+			</row>
+			<row>
+				<column>
+					<name>MONTH</name>
+					<value>2005/10/06 00:00.00</value>
+					<type>VARCHAR2</type>
+				</column>
+				<column>
+					<name>DATE_ID</name>
+					<value>2106</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>UNIQUE_IMSIS</name>
+					<value>1</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>EVENT_COUNT</name>
+					<value>20</value>
+					<type>NUMBER</type>
+				</column>
+			</row>
+		</resultset>
+	</report>
+	<report>
+		<query>SELECT DISTINCT(TimeIDUtils.dayID_to_char(date_id)) as month, date_id, COUNT(imsi_id) as Unique_IMSIs, SUM(counter) as event_count FROM G102G_imsi_month_user GROUP BY date_id ORDER BY date_id DESC</query>
+		<resultset>
+			<row>
+				<column>
+					<name>MONTH</name>
+					<value>2005/10/06 00:00.00</value>
+					<type>VARCHAR2</type>
+				</column>
+				<column>
+					<name>DATE_ID</name>
+					<value>2106</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>UNIQUE_IMSIS</name>
+					<value>1</value>
+					<type>NUMBER</type>
+				</column>
+				<column>
+					<name>EVENT_COUNT</name>
+					<value>20</value>
+					<type>NUMBER</type>
+				</column>
+			</row>
+		</resultset>
+	</report>
+</reportset>
+
+<!--
+	<report type="touchpoint_configuration">
+		Information to go here includes:
+			Customer
+			Hostname
+			Master Hostname
+			Cluster Name
+			DB Hostname
+			DB IP
+			
+	</report>
+	-->
+<!--
+	<report type="solution_configuration">
+		Information to go here includes:
+			deployed model versions
+			parameter table
+			deployed indexes
+			model properties & values
+			
+	</report>
+	-->

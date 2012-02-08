@@ -1,0 +1,71 @@
+
+
+Summary
+
+The touchpoint solution requires hardware to be specified relatively far in advance, both for new deployments and scaling up existing deployments.  The dimensioning of hardware is highly dependent on empirical evidence from deployed sites.  The process for retrieving performance statistics from production sites is currently overly laborious and would benefit significantly from some degree of automation.  On the analysis side, some automation has been possible and should be extended to facilitate richer analysis and communication.
+
+
+Requirements
+
+At a high level, each deployed system should report statistics on traffic levels, unique users, data storage, configuration settings.  This should happen on a repeating, consistent basis, weekly is envisaged.
+The report should be emailed back in an encrypted, compressed format.  The reported data should be parsed, stored and presented locally for analysis and presentation.
+The reporting package should be delivered with solution builds to enable control, tracking, testing, versioning, deployment etc.
+
+The existing iteration of the tool uses various technologies to effect it's function.  These include perl, bash, PL/SQL and some unix utilities (eg gzip and uuencode).  It is proposed to implement the next iteration in Java on the production site side and some web framework on the analysis side (eg Rails, Sinatra, jQuery, ExtJS, GWT).
+
+
+Lower Level Requirements
+
+Email / Transport of reports (& files as required)
+- an email transmission feature to transport files (as attachments)
+- encryption for email
+- compression for email
+
+Email features should be provided as a service, enabled by default, so that any code can use them.
+
+
+Configuration settings
+
+Reports should be created for
+- aging settings for the imsi index per aggregation period per interface
+- aging settings for persisted event data per interface
+
+
+Subscriber count
+
+The number of unique active subscribers should be reported
+- per interface
+- per time period (default to daily)
+
+
+Table population
+
+The dates of aggregated data should be reported for
+- weekly aggregation
+- monthly aggregation
+
+This will inform the database footprint analysis.
+
+
+Traffic Volume
+
+Retrieve the stored collector load from the collection status updates table
+- per interface
+- per 15 minute period
+
+
+Database Footprint
+
+Report on the storage used
+- per interface
+- per aggregation period
+- for aggregated data
+- for event data
+
+Report ASM usage 
+- use SQL provided by DBA's
+- where ASM is not available "df -lk" output should be provided
+
+
+
+

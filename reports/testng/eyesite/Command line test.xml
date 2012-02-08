@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Command line test" failures="0" tests="2" time="0.023" errors="0">
+  <properties/>
+  <testcase name="thisTestWillFail" time="0.0" classname="com.arantech.eyesite.tests.TestNGTest"/>
+  <testcase name="thisTestWillPass" time="0.0" classname="com.arantech.eyesite.tests.TestNGTest"/>
+</testsuite>

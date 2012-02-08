@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+	<xs:element name="reportset">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="deployment_information" maxOccurs="1"/>
+				<xs:element ref="report" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="deployment_information">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="customer" maxOccurs="1"/>
+				<xs:element ref="hostname" maxOccurs="1"/>
+				<xs:element ref="timestamp" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="customer" type="xs:string"/>
+	<xs:element name="hostname" type="xs:string"/>
+	<xs:element name="timestamp" type="xs:long"/>
+	<xs:element name="report">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="query"/>
+				<xs:element ref="caught_exception"/>
+				<xs:element ref="resultset"/>
+			</xs:sequence>
+			<xs:attribute name="type" use="required" type="xs:NCName"/>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="query" type="xs:string"/>
+	<xs:element name="caught_exception" type="xs:string"/>
+	<xs:element name="resultset">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="row" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="row">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="column" maxOccurs="unbounded"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="column">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element ref="name" minOccurs="1"/>
+				<xs:element ref="value" minOccurs="1"/>
+				<xs:element ref="type" minOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="name" type="xs:string"/>
+	<xs:element name="value" type="xs:string"/>
+	<xs:element name="type" type="xs:string"/>
+</xs:schema>
